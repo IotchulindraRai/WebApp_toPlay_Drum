@@ -1,0 +1,174 @@
+html,
+ /* Desktop layout */
+ .kit-holder {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Mobile layout */
+@media (max-width: 576px) {
+    .kit-holder {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+/* Tablet layout */
+@media (min-width: 576px) and (max-width: 992px) {
+    .kit-holder {
+        display: inline-block;
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+/* Large desktop layout */
+@media (min-width: 1200px) {
+    .kit-holder {
+        display: inline-block;
+        margin: 30px;
+        text-align: center;
+    }
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url('./../images/bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+@media (max-width:900px) {
+    main {
+        display: block;
+        min-height: 100%;
+        overflow: auto;
+    }
+    #project-title {
+        padding: 2.5em 1em !important;
+    }
+}
+
+main * {
+    font-family: Comic Sans MS;
+}
+
+#project-title {
+    text-shadow: 3px 3px 7px #18c034;
+}
+
+#drum-set {
+    height: 43vh;
+    width: 50vw;
+}
+
+#drum-set-field {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+}
+
+.kit-holder {
+    position: absolute;
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.kit-holder>img {
+    cursor: grabbing;
+    transition: all ease-in .2s;
+}
+
+.kit-holder>img.active {
+    transform: scale(.9);
+}
+
+#kick-kit {
+    height: 54%;
+    width: 33%;
+    position: absolute;
+    bottom: 0;
+    left: 34.33%;
+    z-index: 1;
+}
+
+#snare-kit {
+    height: 34%;
+    width: 26%;
+    position: absolute;
+    bottom: 32%;
+    left: 19.33%;
+    z-index: 2;
+}
+
+#tom1-kit {
+    height: 32%;
+    width: 25%;
+    position: absolute;
+    bottom: 51%;
+    left: 26.33%;
+    z-index: 1;
+}
+
+#tom2-kit {
+    height: 34%;
+    width: 27%;
+    position: absolute;
+    bottom: 50%;
+    right: 27.33%;
+    z-index: 1;
+}
+
+#floor-kit {
+    height: 49%;
+    width: 29%;
+    position: absolute;
+    bottom: 9%;
+    right: 5.33%;
+    z-index: 1;
+}
+
+#hihat-kit {
+    height: 48%;
+    width: 33%;
+    position: absolute;
+    bottom: 35%;
+    left: -4%;
+    z-index: 2;
+}
+
+#crash-kit {
+    height: 38%;
+    width: 27%;
+    position: absolute;
+    top: -15%;
+    left: 17.33%;
+    z-index: 2;
+}
+
+#ride-kit {
+    height: 41%;
+    width: 30%;
+    position: absolute;
+    top: 0%;
+    right: 0.33%;
+    z-index: 2;
+}
